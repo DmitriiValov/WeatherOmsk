@@ -130,8 +130,7 @@ class ViewController: UIViewController {
             task.resume()
         }
         else {
-         
-            
+            //todo implement alert here            
         }
     }
 }
