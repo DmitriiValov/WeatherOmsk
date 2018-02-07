@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1884D6A201AA5A90093E546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DDF3D32019825A00E27D33 /* Assets.xcassets */; };
 		D1DDF3CD2019825A00E27D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3CC2019825A00E27D33 /* AppDelegate.swift */; };
 		D1DDF3CF2019825A00E27D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3CE2019825A00E27D33 /* ViewController.swift */; };
 		D1DDF3D22019825A00E27D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DDF3D02019825A00E27D33 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		D1DDF3D72019825A00E27D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DDF3D52019825A00E27D33 /* LaunchScreen.storyboard */; };
 		D1DDF3E22019825A00E27D33 /* WeatherOmskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3E12019825A00E27D33 /* WeatherOmskTests.swift */; };
 		D1DDF3ED2019825A00E27D33 /* WeatherOmskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF3EC2019825A00E27D33 /* WeatherOmskUITests.swift */; };
+		D1DDF4012019D9B100E27D33 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DDF4002019D9B100E27D33 /* NotificationCenter.framework */; };
+		D1DDF4042019D9B100E27D33 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDF4032019D9B100E27D33 /* TodayViewController.swift */; };
+		D1DDF4072019D9B100E27D33 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DDF4052019D9B100E27D33 /* MainInterface.storyboard */; };
+		D1DDF40B2019D9B100E27D33 /* OmskWeatherToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1DDF3FE2019D9B100E27D33 /* OmskWeatherToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,28 @@
 			remoteGlobalIDString = D1DDF3C82019825A00E27D33;
 			remoteInfo = WeatherOmsk;
 		};
+		D1DDF4092019D9B100E27D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1DDF3C12019825A00E27D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1DDF3FD2019D9B100E27D33;
+			remoteInfo = OmskWeatherToday;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1DDF40F2019D9B100E27D33 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1DDF40B2019D9B100E27D33 /* OmskWeatherToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D1DDF3C92019825A00E27D33 /* WeatherOmsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherOmsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +73,11 @@
 		D1DDF3E82019825A00E27D33 /* WeatherOmskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherOmskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DDF3EC2019825A00E27D33 /* WeatherOmskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherOmskUITests.swift; sourceTree = "<group>"; };
 		D1DDF3EE2019825A00E27D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DDF3FE2019D9B100E27D33 /* OmskWeatherToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OmskWeatherToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DDF4002019D9B100E27D33 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D1DDF4032019D9B100E27D33 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D1DDF4062019D9B100E27D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D1DDF4082019D9B100E27D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +102,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1DDF3FB2019D9B100E27D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DDF4012019D9B100E27D33 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +119,8 @@
 				D1DDF3CB2019825A00E27D33 /* WeatherOmsk */,
 				D1DDF3E02019825A00E27D33 /* WeatherOmskTests */,
 				D1DDF3EB2019825A00E27D33 /* WeatherOmskUITests */,
+				D1DDF4022019D9B100E27D33 /* OmskWeatherToday */,
+				D1DDF3FF2019D9B100E27D33 /* Frameworks */,
 				D1DDF3CA2019825A00E27D33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +131,7 @@
 				D1DDF3C92019825A00E27D33 /* WeatherOmsk.app */,
 				D1DDF3DD2019825A00E27D33 /* WeatherOmskTests.xctest */,
 				D1DDF3E82019825A00E27D33 /* WeatherOmskUITests.xctest */,
+				D1DDF3FE2019D9B100E27D33 /* OmskWeatherToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +167,24 @@
 			path = WeatherOmskUITests;
 			sourceTree = "<group>";
 		};
+		D1DDF3FF2019D9B100E27D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1DDF4002019D9B100E27D33 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1DDF4022019D9B100E27D33 /* OmskWeatherToday */ = {
+			isa = PBXGroup;
+			children = (
+				D1DDF4032019D9B100E27D33 /* TodayViewController.swift */,
+				D1DDF4052019D9B100E27D33 /* MainInterface.storyboard */,
+				D1DDF4082019D9B100E27D33 /* Info.plist */,
+			);
+			path = OmskWeatherToday;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +195,12 @@
 				D1DDF3C52019825A00E27D33 /* Sources */,
 				D1DDF3C62019825A00E27D33 /* Frameworks */,
 				D1DDF3C72019825A00E27D33 /* Resources */,
+				D1DDF40F2019D9B100E27D33 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1DDF40A2019D9B100E27D33 /* PBXTargetDependency */,
 			);
 			name = WeatherOmsk;
 			productName = WeatherOmsk;
@@ -181,6 +243,23 @@
 			productReference = D1DDF3E82019825A00E27D33 /* WeatherOmskUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D1DDF3FD2019D9B100E27D33 /* OmskWeatherToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DDF40C2019D9B100E27D33 /* Build configuration list for PBXNativeTarget "OmskWeatherToday" */;
+			buildPhases = (
+				D1DDF3FA2019D9B100E27D33 /* Sources */,
+				D1DDF3FB2019D9B100E27D33 /* Frameworks */,
+				D1DDF3FC2019D9B100E27D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmskWeatherToday;
+			productName = OmskWeatherToday;
+			productReference = D1DDF3FE2019D9B100E27D33 /* OmskWeatherToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +284,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = D1DDF3C82019825A00E27D33;
 					};
+					D1DDF3FD2019D9B100E27D33 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = D1DDF3C42019825A00E27D33 /* Build configuration list for PBXProject "WeatherOmsk" */;
@@ -223,6 +306,7 @@
 				D1DDF3C82019825A00E27D33 /* WeatherOmsk */,
 				D1DDF3DC2019825A00E27D33 /* WeatherOmskTests */,
 				D1DDF3E72019825A00E27D33 /* WeatherOmskUITests */,
+				D1DDF3FD2019D9B100E27D33 /* OmskWeatherToday */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +333,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DDF3FC2019D9B100E27D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884D6A201AA5A90093E546 /* Assets.xcassets in Resources */,
+				D1DDF4072019D9B100E27D33 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +373,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1DDF3FA2019D9B100E27D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DDF4042019D9B100E27D33 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = D1DDF3C82019825A00E27D33 /* WeatherOmsk */;
 			targetProxy = D1DDF3E92019825A00E27D33 /* PBXContainerItemProxy */;
+		};
+		D1DDF40A2019D9B100E27D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1DDF3FD2019D9B100E27D33 /* OmskWeatherToday */;
+			targetProxy = D1DDF4092019D9B100E27D33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +416,14 @@
 				D1DDF3D62019825A00E27D33 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D1DDF4052019D9B100E27D33 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1DDF4062019D9B100E27D33 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -425,30 +539,34 @@
 		D1DDF3F22019825A00E27D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MC3WYRL49;
 				INFOPLIST_FILE = WeatherOmsk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Prolev.WeatherOmsk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prolev.omskweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D1DDF3F32019825A00E27D33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MC3WYRL49;
 				INFOPLIST_FILE = WeatherOmsk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Prolev.WeatherOmsk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prolev.omskweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -518,6 +636,38 @@
 			};
 			name = Release;
 		};
+		D1DDF40D2019D9B100E27D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MC3WYRL49;
+				INFOPLIST_FILE = OmskWeatherToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prolev.omskweather.OmskWeatherToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D1DDF40E2019D9B100E27D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MC3WYRL49;
+				INFOPLIST_FILE = OmskWeatherToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prolev.omskweather.OmskWeatherToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +703,15 @@
 			buildConfigurations = (
 				D1DDF3F82019825A00E27D33 /* Debug */,
 				D1DDF3F92019825A00E27D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1DDF40C2019D9B100E27D33 /* Build configuration list for PBXNativeTarget "OmskWeatherToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DDF40D2019D9B100E27D33 /* Debug */,
+				D1DDF40E2019D9B100E27D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
